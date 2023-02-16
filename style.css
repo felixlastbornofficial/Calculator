@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(87, 67, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -13%;
+    top: 40%;
+    background: linear-gradient(45deg,rgb(18, 115, 194),rgb(123, 13, 167));
+    animation: object1 6s linear infinite
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+
+
+
+.calculator{
+    background-color: rgb(4, 38, 66);
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(84, 141, 56, 0.1),5px 5px 15px rgba(69, 50, 95, 0.1);
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(221, 224, 23);
+    cursor: pointer;
+    margin: 10px;
+
+}
+.calculator form input:hover{
+    color: rgb(167, 21, 89);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: blue;
+}
+form input.equal{
+    width: 145px;
+}
+form input.operator{
+    color: rgb(230, 17, 166);
+    font-weight: bolder;
+}
