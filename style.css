@@ -15,23 +15,7 @@
     align-items: center;
     justify-content: center;
 }
-.container::before{
-    position: absolute;
-    content: '';
-    height:400px;
-    width: 400px;
-    border-radius: 50%;
-    left: -13%;
-    top: 40%;
-    background: linear-gradient(45deg,rgb(18, 115, 194),rgb(123, 13, 167));
-    animation: object1 6s linear infinite
-}
-@keyframes object1{
-    50%{
-        left: -13%;
-        top: 41%;
-    }
-}
+
 
 
 
